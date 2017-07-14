@@ -9,7 +9,7 @@ export class HackerService {
   hackers: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.hackers = database.list('hacker');
+    this.hackers = database.list('hackers');
   }
 
   getHackers() {
