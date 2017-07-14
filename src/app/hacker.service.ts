@@ -11,4 +11,13 @@ export class HackerService {
     this.hackers = database.list('hacker');
   }
 
-}  
+  getHackers() {
+  return this.hackers;
+  }
+
+  getHackerById(hackerId: string){
+    return this.database.object('hackers/' + hackerId);
+
+ }
+
+}
