@@ -1,5 +1,7 @@
-<div *ngFor="let hacker of hackers | async">
+<div *ngFor="let hacker of hackers | async" (click)="goToDetailPage(hacker)">
   <div class="jumbotron">
-    <h3><em>{{hacker.alias}}</em> by {{hacker.skill}}</h3>
+    <h3><em>Alias: {{hacker.alias}}</em></h3>
+    <h3><em>Skill: {{hacker.skill}}</em></h3>
+    <h3><em>Description: {{hacker.description}}</em></h3>
   </div>
 </div>

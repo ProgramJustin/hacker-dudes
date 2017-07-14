@@ -17,8 +17,12 @@ export class RosterComponent implements OnInit {
 
   constructor(private router: Router, private hackerService: HackerService) { }
 
-  ngOnInit() {
-    this.hackers = this.hackerService.getHackers();
-  }
+  ngOnInit(){
+  this.hackers = this.hackerService.getHackers();
 }
-console.log(this.hackers);
+
+goToDetailPage(clickedHacker) {
+  this.router.navigate(['hackers', clickedHacker.$key]);
+
+ };
+}

@@ -1,3 +1,28 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Hacker to the club</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Alias:</label>
+        <br>
+        <input #newAlias>
+      </div>
+
+      <div>
+        <label>Hacker Skill:</label>
+        <br>
+        <input #newSkill>
+      </div>
+
+      <div>
+        <label>Hacker's Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <!-- Let's also make sure to empty each text field after the form is submitted: -->
+      <button (click)="submitForm(newAlias.value, newSkill.value, newDescription.value); newAlias.value=''; newSkill.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>

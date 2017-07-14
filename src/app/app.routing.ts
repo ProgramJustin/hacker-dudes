@@ -2,6 +2,8 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent }   from './about/about.component';
 import { RosterComponent }   from './roster/roster.component';
+import { HackerDetailComponent } from './hacker-detail/hacker-detail.component'
+import { AdminComponent } from './admin/admin.component'
 
 const appRoutes: Routes = [
   {
@@ -11,6 +13,18 @@ const appRoutes: Routes = [
   {
     path: 'roster',
     component: RosterComponent
+  },
+  {
+    path: 'hacker-detail',
+    component: HackerDetailComponent
+  },
+  {
+  path: 'hackers/:id',
+    component: HackerDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 
