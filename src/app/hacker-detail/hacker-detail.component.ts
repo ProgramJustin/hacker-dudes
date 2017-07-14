@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Hacker } from '../hacker.model';
 import { HackerService } from '../hacker.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-hacker-detail',
@@ -14,9 +15,16 @@ export class HackerDetailComponent implements OnInit {
   hackerId: string;
   hackerToDisplay;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+    private location: Location,
+    private HackerService: HackerService) {}
 
   ngOnInit() {
+  }
+  this.route.params.forEach((urlParameters) => {
+     this.hackerId = urlParameters['id'];
+   });
+   this.hackerToDisplay = this.hackerService.getHackerById(this.hackerId);
   }
 
 }
