@@ -1,0 +1,17 @@
+{ "Hacker-Dudes": [{
+    "alias": "haxalot",
+    "skill": "DDoS attacks",
+    "description": "Likes Code Red Mt. Dew and hanging out with his kitty, her name is 'Sheeba'.",
+    "id": "1"
+    }, {
+    "alias": "Hutch",
+    "skill": "penetration testing",
+    "description": "Owns a Komodo Dragon named 'Booger' and wants to some day find love with an alien from a distand planet.",
+    "id": "2"
+      }, {
+    "alias": "Doe John",
+    "skill": "DoS attacks",
+    "description": "Prefers not to have a description.",
+    "id": "3"
+  }]
+}
