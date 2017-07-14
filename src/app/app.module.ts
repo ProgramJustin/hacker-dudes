@@ -14,6 +14,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { HackerDetailComponent } from './hacker-detail/hacker-detail.component';
 import { RosterComponent } from './roster/roster.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditHackerComponent } from './edit-hacker/edit-hacker.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     HackerComponent,
     HackerDetailComponent,
     RosterComponent,
-    AdminComponent
+    AdminComponent,
+    EditHackerComponent
   ],
   imports: [
     BrowserModule,
