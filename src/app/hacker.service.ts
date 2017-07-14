@@ -1,3 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Hacker } from './hacker.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+
+
+@Injectable()
+export class HackerService {
+  hackers: FirebaseListObservable<any[]>;
+
+  constructor(private database: AngularFireDatabase) {
+    this.hackers = database.list('hacker');
+  }
+
+}  
