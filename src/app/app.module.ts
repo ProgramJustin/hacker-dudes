@@ -15,7 +15,12 @@ import { HackerComponent } from './hacker/hacker.component';
     HackerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routing,
+    // AngularFireModule.initializeApp(firebaseConfig),
+    // AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
