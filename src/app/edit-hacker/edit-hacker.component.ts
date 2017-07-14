@@ -16,6 +16,12 @@ export class EditHackerComponent implements OnInit {
     this.hackerService.updateHacker(hackerToUpdate);
   }
 
+  beginDeletingHacker(hackerToDelete){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.hackerService.deleteHacker(hackerToDelete);
+    }
+  }
+
   ngOnInit() {
   }
 

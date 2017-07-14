@@ -31,4 +31,9 @@ export class HackerService {
                                 description: localUpdatedHacker.description});
   }
 
+  deleteHacker(localHackerToDelete){
+    var hackerEntryInFirebase = this.getHackerById(localHackerToDelete.$key);
+    hackerEntryInFirebase.remove();
+  }
+
 }
