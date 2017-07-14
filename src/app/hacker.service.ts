@@ -5,6 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class HackerService {
+
   hackers: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
@@ -15,13 +16,12 @@ export class HackerService {
   return this.hackers;
   }
 
-  // addHacker(newHacker: Hacker) {
-  //   this.hackers.push(newHackers);
-  // }
+  addHacker(newHackers: Hacker) {
+    this.hackers.push(newHackers);
+  }
 
   getHackerById(hackerId: string){
     return this.database.object('hackers/' + hackerId);
-
  }
 
 }

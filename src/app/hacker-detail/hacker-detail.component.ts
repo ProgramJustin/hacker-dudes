@@ -20,12 +20,10 @@ export class HackerDetailComponent implements OnInit {
     private HackerService: HackerService) {}
 
   ngOnInit() {
-  }
-  
-  this.route.params.forEach((urlParameters) => {
-     this.hackerId = urlParameters['id'];
-   });
-   this.hackerToDisplay = this.hackerService.getHackerById(this.hackerId);
-  }
+    this.route.params.forEach((urlParameters) => {
+       this.hackerId = urlParameters['id'];
+     });
 
-}
+     this.hackerToDisplay = this.HackerService.getHackerById(this.hackerId);
+    }
+  }
