@@ -21,6 +21,7 @@ export class HackerDetailComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   this.route.params.forEach((urlParameters) => {
      this.hackerId = urlParameters['id'];
    });
