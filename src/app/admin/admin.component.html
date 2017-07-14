@@ -5,13 +5,13 @@
   <div class="panel-body">
     <div>
       <div>
-        <label>Alias:</label>
+        <label>Hacker's Alias:</label>
         <br>
         <input #newAlias>
       </div>
 
       <div>
-        <label>Hacker Skill:</label>
+        <label>Hacker's Skill:</label>
         <br>
         <input #newSkill>
       </div>
@@ -25,4 +25,8 @@
       <button (click)="submitForm(newAlias.value, newSkill.value, newDescription.value); newAlias.value=''; newSkill.value=''; newDescription.value=''">Add</button>
     </div>
   </div>
+</div>
+
+<div>
+  <app-roster></app-roster>
 </div>
