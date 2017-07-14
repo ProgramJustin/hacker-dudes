@@ -1,13 +1,16 @@
-<div *ngFor="let hacker of hackers | async" (click)="goToDetailPage(hacker)">
+<div class="well" *ngFor="let hacker of hackers | async">
   <div class="jumbotron">
-    <h3><em>Alias: {{hacker.alias}}</em></h3>
-    <h3><em>Skill: {{hacker.skill}}</em></h3>
-    <h3><em>Description: {{hacker.description}}</em></h3>
+    <h3 (click)="goToDetailPage(hacker)">
+      <em>Alias:   {{hacker.alias}}<br />
+          Skill:   {{hacker.skill}}<br />
+          Description:   {{hacker.description}}<br />
+      </em>
+    </h3>
 
     <div *ngIf="currentRoute === '/admin'">
       {{hacker.description}}
       <hr>
-      <app-edit-hacker></app-edit-hacker>
+      <app-edit-hacker [selectedHacker]="hacker"></app-edit-hacker>
     </div>
   </div>
 </div>

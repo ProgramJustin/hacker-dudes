@@ -24,4 +24,11 @@ export class HackerService {
     return this.database.object('hackers/' + hackerId);
  }
 
+ updateHacker(localUpdatedHacker){
+    var hackerEntryInFirebase = this.getHackerById(localUpdatedHacker.$key);
+    hackerEntryInFirebase.update({title: localUpdatedHacker.title,
+                                artist: localUpdatedHacker.artist,
+                                description: localUpdatedHacker.description});
+  }
+
 }
