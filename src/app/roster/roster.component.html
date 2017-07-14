@@ -1,3 +1,5 @@
-<p>
-  roster works!
-</p>
+<div *ngFor="let hacker of hackers | async">
+  <div class="jumbotron">
+    <h3><em>{{hacker.alias}}</em> by {{hacker.skill}}</h3>
+  </div>
+</div>
