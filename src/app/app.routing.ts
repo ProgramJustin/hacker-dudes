@@ -1,11 +1,16 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent }   from './about/about.component';
-import { RosterComponent }   from './roster/roster.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { RosterComponent } from './roster/roster.component';
 import { HackerDetailComponent } from './hacker-detail/hacker-detail.component'
 import { AdminComponent } from './admin/admin.component'
 
 const appRoutes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: 'about',
     component: AboutComponent

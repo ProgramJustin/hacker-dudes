@@ -6,7 +6,6 @@ import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { HackerComponent } from './hacker/hacker.component';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -15,6 +14,7 @@ import { HackerDetailComponent } from './hacker-detail/hacker-detail.component';
 import { RosterComponent } from './roster/roster.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditHackerComponent } from './edit-hacker/edit-hacker.component';
+import { HomeComponent } from './home/home.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,11 +27,11 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     AboutComponent,
-    HackerComponent,
     HackerDetailComponent,
     RosterComponent,
     AdminComponent,
-    EditHackerComponent
+    EditHackerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
