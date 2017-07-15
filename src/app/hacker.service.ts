@@ -26,9 +26,7 @@ export class HackerService {
 
  updateHacker(localUpdatedHacker){
     var hackerEntryInFirebase = this.getHackerById(localUpdatedHacker.$key);
-    hackerEntryInFirebase.update({title: localUpdatedHacker.title,
-                                artist: localUpdatedHacker.artist,
-                                description: localUpdatedHacker.description});
+    hackerEntryInFirebase.update({alias: localUpdatedHacker.alias, skill: localUpdatedHacker.skill, description: localUpdatedHacker.description});
   }
 
   deleteHacker(localHackerToDelete){
