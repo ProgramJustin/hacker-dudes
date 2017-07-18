@@ -11,6 +11,6 @@
 <label>New Hacker Description:</label>
 <input [(ngModel)]="selectedHacker.description">
 
-<button (click)="beginUpdatingHacker(selectedHacker)">Update</button>
+<button class="bg-primary" (click)="beginUpdatingHacker(selectedHacker)">Update</button>
 
-<button (click)="beginDeletingHacker(selectedHacker)">Delete</button>
+<button class="bg-danger" (click)="beginDeletingHacker(selectedHacker)">Delete</button>
