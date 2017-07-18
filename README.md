@@ -3,14 +3,14 @@
 ## CONTRIBUTORS: **JUSTIN GOMEZ**
 
 ### PROJECT DESCRIPTION:
-* A Club for hackers, you could become a member, edit your stats, and remove yourself from the club if you choose.
+* A Club for hackers, you could become a member by joining the roster, edit your stats, and remove yourself from the club if you choose.
 
 #TECHNOLOGIES USED
 
 * HTML
 * CSS
 * TYPESCRIPT/JAVASCRIPT
-* ANGULAR C
+* ANGULAR
 * NPM
 * BOWER
 * FIREBASE
