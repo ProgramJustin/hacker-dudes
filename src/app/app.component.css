@@ -3,14 +3,7 @@
   padding: 10px;
 }
 .helloAdmin {
-  /*position: absolute;*/
   width: 30%;
   color: white;
-  animation: warn 2.5s;
   background-color: red;
-}
-@@keyframes warn {
-
-
-
 }
